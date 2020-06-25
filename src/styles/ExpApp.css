@@ -1,0 +1,104 @@
+.content{
+    display: grid;
+    grid-template-areas: "num pow eql answer"
+                         "info info info info"
+                         "numInfo numInfo powInfo powInfo"
+                         "inNum inNum inPow inPow";
+    grid-template-rows:  50px 50px 40px 20px 20px; 
+    grid-template-columns: minmax(auto,192) auto auto auto; 
+
+    width: 500px;
+    margin: auto;
+    margin-top: 300px;
+    padding: 10px;
+    border: gray solid 2px ;
+  }
+
+  .num{
+    grid-area: num;
+    text-align: end;
+    font-size: 40px;
+    max-width: 192px;
+  }
+
+  .pow{
+    grid-area: pow;
+    font-size: 20px;
+}
+
+  .eql{
+    grid-area: eql;
+    width: 30px;
+    height: 40px;
+    margin-top: 5px;
+    background: none;
+    font-size: 19px;
+    font-weight: bold;
+  }
+
+  button:active,button:focus{
+    outline: none;
+  }
+
+  .answer{
+      grid-area: answer;
+      font-size: 40px;
+  }
+
+  .info{
+    grid-area: info;
+    text-align: center;
+    font-size: 20px;
+    background-color: green;
+    margin-top: 20px;
+    color: white;
+    border-radius: 5px;
+  }
+  .info.yel{
+    grid-area: info;
+    text-align: center;
+    font-size: 20px;
+    background-color: #ff7100d1;
+
+
+  }
+  .info.red{
+    grid-area: info;
+    text-align: center;
+    font-size: 20px;
+    background-color: red;
+
+
+  }
+
+  .inNum{
+    grid-area: inNum;
+    width: 140px;
+    height: 20px;
+
+  }
+  .inPow{
+    grid-area: inPow;
+    width: 140px;
+    height: 20px;
+    margin-left: auto;
+  }
+  
+  input:focus,input:active,input:hover{
+    outline: none;
+  }
+
+  .numInfo{
+      grid-area: numInfo;
+      font-size: 20px;
+      padding-top: 10px;
+      font-weight: bold;
+  }
+ 
+  .powInfo{
+    grid-area: powInfo;
+    text-align: end;
+    font-size: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
