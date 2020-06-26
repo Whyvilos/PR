@@ -17,15 +17,30 @@
     "@babel/preset-react": "^7.10.1",
     "babel-loader": "^8.1.0",
     "cypress": "^4.9.0",
+    "eslint": "^7.2.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4.0.0",
     "webpack-dev-server": "^3.11.0"
   },
   "scripts": {
-    "test": "./node_modules/.bin/cypress run",
+    "test": "cypress run",
     "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "build": "react-scripts build",
+    "lint": "eslint src"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Whyvilos/PR.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Whyvilos/PR/issues"
+  },
+  "homepage": "https://github.com/Whyvilos/PR#readme",
   "description": ""
 }
