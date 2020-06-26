@@ -28,7 +28,7 @@
   "scripts": {
     "test": "cypress run",
     "start": "node ./server.js",
-    "build": "react-scripts build",
+    "build": "./node_modules/.bin/webpack --mode=production",
     "lint": "eslint src"
   },
   "keywords": [],
