@@ -1,8 +1,6 @@
-import React,{Component} from 'react';
-import ExpApp from './ExpApp.js'
+import React from 'react';
+import ExpApp from './ExpApp.js';
 import '../styles/App.css';
-
-
 
 class App extends Component{  
     render(){
